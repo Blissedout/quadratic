@@ -25,13 +25,17 @@ const calculate = () => {
     const root2 = (-b - Math.sqrt(dis)) / (2 * a);
     result.innerHTML = `The roots are: x=${root1.toFixed(2)}, <br> y= ${root2.toFixed(2)}`;
 
-  }else if (dis === 0) {
-      const root = -b / (2*a);
+  } else if (dis === 0) {
+      const root = (-b / (2*a)).toFixed(2);
       result.innerHTML = `root x = ${root.toFixed(2)}`;
   }else{
-    const r = (-b / (2*a)).toFixed(2)};
+    const r = (-b / (2*a)).toFixed(2);
     const i = (Math.sqrt(-dis) / (2*a)).toFixed(2);
     result.innerHTML = `Complex root: x = ${r.toFixed(2)} + ${i}i, y = ${r} - ${i}i`;
   }
+
+};
+
+document.getElementById('calcBtn').addEventListener('click', calculate);
    
 

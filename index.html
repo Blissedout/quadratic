@@ -8,43 +8,27 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/all.min.css">
 </head>
-<body>
- 
-     <div class="container mt-5">
-      <div class="card shadow-lg p-4"> 
-         <h2 class="text-center mb-4 fw-bold ms-3 me-3">
+<body class="d-flex justify-content-center align-items-center vh-100">
+     <div class="container">
+      <div class="row justify-content-center">
+         <div class="col-md-6 col-lg-4">
+             <div class="card shadow-lg border-0 rounded-4"> 
+                <div class="card-body text-center">
+                  <h2 class="card-title mb-3 fw-bold">
         Quadratic Calculator</h2>
-
-         <div class="row g-3">
-            <div class="col-md-3 ms-3">
-             <label for="">num1</label>
-              <input type="number" id="a">
-            </div>
-              <div class="col-md-6 ms-3">
-               <label for="">num2</label>
-                 <input type="number" id="b">
-              </div>
-               <div class="col-md-6 ms-3">
-                <label for="" class="">num3</label>
-                <input type="number" id="c">
-               </div>
-       
-
-               <div id="result" class="col-md-3 ms-3">
-               </div>
-                <div class="col-sm-3 px-5 ms-5">
-               <button onclick="calculate()" class="text-white" style="border-radius: 5px; background-color: green;">Calculate</button>
-               </div>
-
+                  <p>Equation: ax<sup>2</sup> + bx + c</p>
+                      <div class="col mb-3">
+                       <input type="number" id="a" class="form-control mb-2" placeholder="Enter num a">
+                       <input type="number" id="b" class="form-control mb-2" placeholder="Enter num b">
+                        <input type="number" id="c" class="form-control mb-2" placeholder="Enter num c">
+               </div> 
+                  <button id="calcBtn" class="btn btn-success w-100">Calculate</button>
+                    <div id="result" class="mt-4 fw-semibold text-dark">
+                    </div>
+                </div>
+             </div>
          </div>
       </div>
-   </div>
-
-
-
-
-
-
   <script src="script.js"></script>
 </body>
 </html>
