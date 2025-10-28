@@ -31,7 +31,7 @@ const calculate = () => {
   }else{
     const r = (-b / (2*a)).toFixed(2);
     const i = (Math.sqrt(-dis) / (2*a)).toFixed(2);
-    result.innerHTML = `Complex root: x = ${r.toFixed(2)} + ${i}i, y = ${r} - ${i}i`;
+    result.innerHTML = `Complex root: x = ${r} + ${i}i, y = ${r} - ${i}i`;
   }
 
 };
